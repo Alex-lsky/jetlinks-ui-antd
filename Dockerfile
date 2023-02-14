@@ -1,9 +1,6 @@
 FROM node:16.0.0-alpine as build-stage
 WORKDIR /app
-COPY package*.json ./
-RUN yarn install
 COPY . .
-RUN yarn run build
 
 FROM nginx:1.19.2-alpine
 COPY --from=build-stage /app/dist /usr/share/nginx/html
