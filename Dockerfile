@@ -1,9 +1,9 @@
 FROM node:14.15.0-alpine as build-stage
 WORKDIR /app
 COPY package*.json ./
-RUN npm install
+RUN yarn install
 COPY . .
-RUN npm run build
+RUN yarn run build
 
 FROM nginx:1.19.2-alpine
 COPY --from=build-stage /app/dist /usr/share/nginx/html
