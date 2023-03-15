@@ -1,17 +1,17 @@
-Language : [🇺🇸](./README.md) | 🇨🇳 | [🇷🇺](./README.ru-RU.md) | [🇹🇷](./README.tr-TR.md) | [🇯🇵](./README.ja-JP.md) | [🇫🇷](./README.fr-FR.md) | [🇵🇹](./README.pt-BR.md) | [🇸🇦](./README.ar-DZ.md)
+Language : [🇺🇸](./README.md) | 🇨🇳 
 
 <h1 align="center">Jetlinks </h1>
 
 ## 使用
 
 ```bash
-$ git clone git@gitee.com:jetlinks-projects/smart-building-platform-ui.git
-$ cd <your-project-name>
-$ npm install
-$ npm start         # visit http://localhost:8000
+$ git clone git@github.com:jetlinks/jetlinks-ui-antd.git
+$ cd jetlinks-ui-antd
+$ yarn
+$ yarn start:dev
 ```
 
-更多信息请参考 [使用文档](http://pro.ant.design/docs/getting-started)。
+更多信息请参考 [使用文档](https://doc.jetlinks.cn)。
 
 ## 支持环境
 
