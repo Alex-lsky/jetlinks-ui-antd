@@ -15,11 +15,11 @@ jobs:
           login-server: registry.cn-hangzhou.aliyuncs.com # 务必正确填写镜像容器服务的登录地址
           username: "${{ secrets.REGISTRY_USERNAME }}" # 引用GitHub repo设置的镜像容器服务用户名
           password: "${{ secrets.REGISTRY_PASSWORD }}" # 引用GitHub repo设置的镜像容器服务密码
-      - name: Cache npm Repository
-        uses: actions/cache@v1
-        with:
-          path: ./node_modules
-          key: jetlinks-ui-pro-repository
+#      - name: Cache npm Repository
+#        uses: actions/cache@v1
+#        with:
+#          path: ./node_modules
+#          key: jetlinks-ui-pro-repository
       - name: Install 🔧
         run: |
           set NODE_OPTIONS=-max_old_space_size=8096
